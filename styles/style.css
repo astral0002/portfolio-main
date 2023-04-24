@@ -1,0 +1,61 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito&display=swap');
+
+/* Root and variables */
+
+:root{
+    --mainfont: 'Montserrat', sans-serif;
+    --headerfont: 'Nunito', sans-serif;
+    --dark1: #393646;
+    --dark2: #4F4557;
+    --dark3: #6D5D6E;
+    --light: #F4EEE0;
+}
+
+/* Main styling, might be "slightly" unordered */
+
+/* some basic all-wide params */
+*{
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--dark2);
+}
+
+#nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--dark1);
+    padding: 20px 0px;
+    font-family: var(--headerfont);
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    padding: 0px 25px;
+    color: var(--light)
+}
+
+
+
+
+/* Animations, resources and whatnot */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
