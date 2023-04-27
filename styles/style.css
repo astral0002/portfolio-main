@@ -1,5 +1,5 @@
 /* imports */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Nunito&display=swap');
 
 /* Root and variables */
 
@@ -19,12 +19,22 @@
     text-decoration: none;
     margin: 0;
     box-sizing: border-box;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body{
     background-color: var(--dark2);
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    scroll-behavior: smooth;
+    font-family: var(--mainfont);
+    color: rgb(255, 255, 255)
 }
 
+/* Navbar styling and whatnot */
 #nav{
     display: flex;
     justify-content: center;
@@ -34,6 +44,8 @@ body{
     background-color: var(--dark1);
     padding: 20px 0px;
     font-family: var(--headerfont);
+    list-style: none;
+    z-index: 999;
 }
 
 #navbar ul{
@@ -47,6 +59,36 @@ body{
     color: var(--light)
 }
 
+/* END OF NAVBAR => START OF INTRO! */
+
+
+#main-content{
+    height: 100vh;
+    width: 100%;
+}
+
+.skilltable{
+    padding: 40px 20px;
+    width: 100%;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    /* padding-left:5%; */
+}
+
+.skilltable td{
+    text-align: center;
+    padding: 0;
+}
+
+.pfp{
+    /* padding-left: 20px; */
+    width: 350px;
+    height: auto;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+}
 
 
 
