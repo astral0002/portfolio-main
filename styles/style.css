@@ -27,7 +27,7 @@ body{
     background-color: var(--dark2);
     opacity: 0;
     animation: fadeIn 2s;
-    animation-delay: 0.2s;
+    animation-delay: 0.3s;
     animation-fill-mode: forwards;
     scroll-behavior: smooth;
     font-family: var(--mainfont);
@@ -59,7 +59,7 @@ body{
     color: var(--light)
 }
 
-/* END OF NAVBAR => START OF INTRO! */
+/* END OF NAVBAR => START OF INTRODUCTION*/
 
 
 #main-content{
@@ -67,7 +67,7 @@ body{
     width: 100%;
 }
 
-.skilltable{
+.introduction{
     padding: 40px 20px;
     width: 100%;
     display: flexbox;
@@ -76,7 +76,7 @@ body{
     /* padding-left:5%; */
 }
 
-.skilltable td{
+.introduction td{
     text-align: center;
     padding: 0;
 }
@@ -90,7 +90,38 @@ body{
     margin: 0;
 }
 
+/* New section dedicated specifically for the skillset and achievements */
 
+
+#info{
+    display: flex;
+    /* width: 100%; */
+    text-align: center;
+    justify-content: center;
+}
+
+#info th{
+    padding: 20px 0!important;
+}
+
+#skillset{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    padding: 20px;
+    width: 20%!important;
+}
+#center{
+    width: 100%;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
 
 /* Animations, resources and whatnot */
 @keyframes fadeIn{
