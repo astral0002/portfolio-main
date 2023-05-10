@@ -123,7 +123,37 @@ h1{
     text-align: center;
 }
 
+
+/* Contact-me :) */
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-links{
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+}
+#contact-links li{
+    display: inline;
+    padding: 20px;
+    border: 2px;
+    border-color: var(--dark1);
+    border-style: solid;
+    border-radius: 100%;
+    text-align: center;
+    margin: 2.5px;
+}
+#contact-links li i{
+    width:20px;
+}
+
 /* Animations, resources and whatnot */
+
 @keyframes fadeIn{
     from{
         opacity: 0;
