@@ -5,5 +5,9 @@ const instagram = () => {
 const discord = () => {
     var text = "astral#7180"
     navigator.clipboard.writeText(text);
-    alert("You have copied the name.")
+    alert("Copied to clipboard!");
+}
+const github = () => {
+    var link = "https://github.com/astral0002";
+    window.open(link);
 }

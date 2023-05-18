@@ -129,6 +129,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    scale: 0.8;
 }
 #contact-links{
     display: inline-flex;
@@ -149,8 +150,13 @@ h1{
     margin: 2.5px;
 }
 #contact-links li i{
-    width:20px;
+    min-width: 20px;
+    max-width: min-content;
+    max-height: min-content;
 }
+
+/* about me  */
+
 
 /* Animations, resources and whatnot */
 
