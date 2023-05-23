@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="shortcut icon" href="resources/favicon.png" type="image/x-icon">
     <!-- links and stuff -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" media="screen and (max-width:800px)" href="styles/tablet.css">
     <!--If the display width is lesser than 800, load some css rules from tablet.css-->
@@ -26,9 +24,9 @@
         <div id="navbar">
             <!--NAVIGATION!!-->
             <ul id="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#aboutme">About me</a></li>
-                <li><a href="#contact">Contacts</a></li>
+                <li><a href="#">Glavna stranica</a></li>
+                <li><a href="#aboutme">O meni</a></li>
+                <li><a href="#contact">Kontakti</a></li>
             </ul>
         </div>
         <div id="intro">
@@ -36,16 +34,27 @@
                 <tr>
                     <td><img class="pfp" src="resources/image.png" alt="Profile picture"></td>
                     <td>
-                        <h1>Hello!</h1>
-                        <p>My name is Jovan Lukić. I come from a small town near Belgrade, the capital of Serbia.</p>
+                        <h1 id="pozdrav">Zdravo!</h1>
+                        <p>Moje ime je Jovan I potičem iz Obrenovca, grada u blizini Beograda, glavnog grada Srbije.</p>
+                        <button onClick="document.getElementById('aboutme').scrollIntoView();">Još</button>
                     </td>
                 </tr>
             </table>
         </div>
 
         <div id="aboutme">
-            <h3>A little more about me:</h3>
-            <p></p>
+            <h3>Još o meni:</h3>
+            <p>Zdravo, ja sam mladi web developer lokalno poznat za svoje umeće. Moji trenutno poznati programski jezici uključuju Python i JS, iako svaki dan pokušavam da naučim ponešto više.</p>
+            <h4>Poreklo:</h4>
+            <p>Rođen sam 12. februara 2007. godine na Banovom brdu. Od tada sam se odselio u Obrenovac, gde trenutno živim.</p>
+            <h4>Školovanje:</h4>
+            <p><a href="https://osjefimija.edu.rs/">Osnovna Škola Jefimija</a>, škola u kojoj sam proveo detinjstvo</p>
+            <p>Trenutno sam ponosan učenik <a href="https://tsobrenovac.edu.rs">Tehničke Škole Obrenovac (TSOBR)</a>, smer Elektrotehničar računara.</p>
+            <h4>Učenja i kursevi:</h4>
+            <p>JS - Samoučen
+                Web - Dr. Angela Yu's complete web developement bootcamp (U toku)
+                Python - <a href="http://cmt.edu.rs/talenti/">CMT Centar za Mlade Talente</a> (<a href="resources/Lukić Jovan.jpg">Završeno</a>)
+            </p>
         </div>
 
 
@@ -65,14 +74,14 @@
 
 
         <div id="center">
-            <h3>Contact me!</h3><br>
+            <h2>Kontaktirajte me ovde!</h2><br>
         </div>
         <div id="contact">
             <ul id="contact-links">
-                <li><i class="fa-regular fa-envelope"></i></li>
-                <li><a onclick="instagram();"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a onclick="discord();"><i class="fa-brands fa-discord"></i></a></li>
-                <li><a onclick="github();"><i class="fa-brands fa-github"></i></a></li>
+                <li><button href="mailto:jocajovan180@gmail.com"><i class="fa-regular fa-envelope"></i></button></li>
+                <li><button onclick="instagram();"><i class="fa-brands fa-instagram"></i></button></li>
+                <li><button onclick="discord();"><i class="fa-brands fa-discord"></i></button></li>
+                <li><button onclick="github();"><i class="fa-brands fa-github"></i></button></li>
             </ul>
         </div>
 </body>

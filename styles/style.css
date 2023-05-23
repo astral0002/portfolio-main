@@ -10,6 +10,7 @@
     --dark2: #4F4557;
     --dark3: #6D5D6E;
     --light: #F4EEE0;
+    --link: #aba5ff;
 }
 
 /* Main styling, might be "slightly" unordered */
@@ -21,6 +22,14 @@
     box-sizing: border-box;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+button{
+    margin: none;
+    background: none;
+    border: none;
+    color: white;
 }
 
 body{
@@ -32,6 +41,14 @@ body{
     scroll-behavior: smooth;
     font-family: var(--mainfont);
     color: rgb(255, 255, 255)
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1.4rem;
 }
 
 /* Navbar styling and whatnot */
@@ -67,13 +84,32 @@ body{
     width: 100%;
 }
 
+
+
 .introduction{
-    padding: 40px 20px;
+    padding: 80px 20px;
     width: 100%;
     display: flexbox;
     justify-content: center;
     align-items: center;
+    font-size: 1.2rem;
+    height: 800px
     /* padding-left:5%; */
+}
+
+.introduction button{
+    font-size: 1.2rem!important;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 4px 10px;
+    transition: transform .2s;
+    margin: 4px;
+}
+
+.introduction button:hover{
+    transform: scale(1.2);
 }
 
 .introduction td{
@@ -92,16 +128,22 @@ body{
 
 /* New section dedicated specifically for the skillset and achievements */
 
-
-#info{
+#aboutme{
     display: flex;
-    /* width: 100%; */
-    text-align: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#info th{
-    padding: 20px 0!important;
+#aboutme p{
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 20px 190px;
+}
+
+#aboutme a{
+    color: var(--link);
+    text-decoration: solid;
 }
 
 #skillset{
@@ -112,12 +154,20 @@ body{
     padding: 20px;
     width: 20%!important;
 }
+
 #center{
+    padding-top: 1.3rem;
     width: 100%;
     justify-content: center;
     align-items:center;
     text-align: center;
+    font-size: 1.1rem;
 }
+
+#center h2{
+    font-size: 1.1rem!important;
+}
+
 
 h1{
     text-align: center;
@@ -129,8 +179,9 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    scale: 0.8;
+    scale: 1;
 }
+
 #contact-links{
     display: inline-flex;
     list-style: none;
@@ -139,22 +190,28 @@ h1{
     justify-content: center;
     justify-self: center;
 }
-#contact-links li{
-    display: inline;
+
+#contact-links button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     border: 2px;
     border-color: var(--dark1);
     border-style: solid;
-    border-radius: 100%;
     text-align: center;
     margin: 2.5px;
-}
-#contact-links li i{
-    min-width: 20px;
-    max-width: min-content;
-    max-height: min-content;
+    border-radius: 10px;
 }
 
+#contact-links ul li{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact i{
+    scale: 1.2;
+}
 /* about me  */
 
 
@@ -166,5 +223,13 @@ h1{
     }
     to{
         opacity: 1;
+    }
+}
+@keyframes enlarge{
+    from{
+        scale: 1;
+    }
+    to{
+        scale:1.2;
     }
 }
